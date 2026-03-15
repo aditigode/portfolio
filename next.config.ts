@@ -5,10 +5,8 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
-  // If deploying to https://aditigode.github.io/REPO_NAME/ (not the root user site),
-  // uncomment and set your repo name:
-  //basePath: '/my_portfolio',
-  // assetPrefix: '/my_portfolio/',
+  basePath: '/portfolio',
+  assetPrefix: '/portfolio/',
 };
 
 export default nextConfig;
