@@ -351,7 +351,7 @@ export default function Home() {
               {/* Photo */}
               <div className="md:col-span-2 flex justify-center">
                 <Image
-                  src="/portfolio_picture.jpg"
+                  src="/portfolio/portfolio_picture.jpg"
                   alt="Aditi Gode"
                   width={320}
                   height={320}
