@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Caveat, Nunito } from "next/font/google";
+import { Caveat, Nunito, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 const caveat = Caveat({
@@ -12,6 +12,13 @@ const nunito = Nunito({
   variable: "--font-nunito",
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
+});
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -36,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={`${caveat.variable} ${nunito.variable} antialiased`}>
+      <body className={`${caveat.variable} ${nunito.variable} ${playfair.variable} antialiased`}>
         {children}
       </body>
     </html>
